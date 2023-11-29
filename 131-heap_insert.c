@@ -1,9 +1,9 @@
 #include "binary_trees.h"
 
 /**
- * heap_insert - inserts a value in Max Binary Heap
- * @root: a double pointer to the root node of the Heap to insert the value
- * @value: the value to store in the node to be inserted
+ * heap_insert - puts a value in Max Binary Heap
+ * @root: a double pointer to parent node of the Heap to put the value
+ * @value: the value to save in the node to be inserted
  *
  * Return: a pointer to the created node
  *         NULL on failure
@@ -47,13 +47,13 @@ heap_t *heap_insert(heap_t **root, int value)
 		flip->parent->n = tmp;
 		new = new->parent;
 	}
-	/* Flip values with parent until parent value exceeds new value */
+	/* Flip values with parent until parent value passes new value */
 
 	return (new);
 }
 
 /**
- * binary_tree_size - measures the size of a binary tree
+ * binary_tree_size - computes the size of a binary tree
  * @tree: tree to measure the size of
  *
  * Return: size of the tree
