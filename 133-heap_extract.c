@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 /**
- * tree_height - measures the height of a binary tree
- * @tree: pointer to the root node of the tree to measure the height
+ * tree_height - calculates the height of a binary tree
+ * @tree: pointer to the root node of the tree to calculate the height
  *
  * Return: Height or 0 if tree is NULL
  */
@@ -26,8 +26,8 @@ size_t tree_height(const heap_t *tree)
 	return (height_r);
 }
 /**
- * tree_size_h - measures the sum of heights of a binary tree
- * @tree: pointer to the root node of the tree to measure the height
+ * tree_size_h - calculate the sum of heights of a binary tree
+ * @tree: pointer to source node of the tree to calculate the height
  *
  * Return: Height or 0 if tree is NULL
  */
@@ -49,7 +49,7 @@ size_t tree_size_h(const binary_tree_t *tree)
 }
 
 /**
- * _preorder - goes through a binary tree using pre-order traversal
+ * _preorder - runs through a binary tree using pre-order traversal
  * @tree: pointer to the root node of the tree to traverse
  * @node: will be last note in traverse
  * @height: height of tree
@@ -106,7 +106,7 @@ void heapify(heap_t *root)
 }
 
 /**
- * heap_extract - extracts the root node from a Max Binary Heap
+ * heap_extract - removes the root node from a Max Binary Heap
  * @root: pointer to the heap root
  * Return: value of extracted node
  **/
