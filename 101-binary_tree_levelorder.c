@@ -8,11 +8,11 @@ void pop(levelorder_queue_t **head);
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 
 /**
- * create_node - Creates a new levelorder_queue_t node.
- * @node: The binary tree node for the new node to contain.
+ * create_node - fasions a new levelorder_queue_t node.
+ * @node: binary tree node for new node to contain.
  *
  * Return: If an error occurs, NULL.
- *         Otherwise, a pointer to the new node.
+ *         else, a pointer to the new node.
  */
 levelorder_queue_t *create_node(binary_tree_t *node)
 {
